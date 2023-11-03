@@ -1,0 +1,35 @@
+html{
+    background-image:url(222400.jpg);
+    background-size:cover;
+}
+h1 {
+    text-align: center;
+}
+
+.login {
+    text-align: center;
+    color: white;
+}
+.form
+{
+    border: 2px solid black;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: rgba(51,52,44,255);
+}
+.form-input
+{
+    margin-top: 10px;
+    padding: 8px;
+    width: 250px;
+    font-size: 15px;
+}
+.form-button
+{
+    margin-top: 20px;
+   padding: 5px;
+   font-weight: bolder;
+   cursor: pointer;
+}
+

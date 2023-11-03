@@ -1,3 +1,43 @@
-<h1>
-    Bitcoin Price Prediction
-</h1>
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Price Prediction</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Bit Coin Price Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form class="form" action="{{ url_for('predict')}}"method="post">
+        <input type="text" class="form-input" name="year" placeholder="year" required="required" /><br>
+    	<input type="text" class="form-input" name="month" placeholder="month" required="required" /><br>
+        <input type="text" class="form-input" name="date" placeholder="date" required="required" /><br>
+        <input type="text" class="form-input" name="Open" placeholder="Open" required="required" /><br>
+        <input type="text" class="form-input" name="High" placeholder="High" required="required" /><br>
+        <input type="text" class="form-input" name="Low" placeholder="Low" required="required" /><br>
+        <input type="text" class="form-input" name="Adj Close" placeholder="Adj Close" required="required" /><br>
+        <input type="text" class="form-input" name="Volume" placeholder="Volume" required="required" /><br>
+        
+
+        <button type="submit" class="form-button" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+  
+   
+ </div>
+  {{prediction_text}}
+
+</body>
+</html>
